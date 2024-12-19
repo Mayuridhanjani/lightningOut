@@ -16,11 +16,13 @@
           // callback when component is created and active on the page
 
 
-            // Access the lightning-input element via component API
-            var inputElement = cmp.querySelector('lightning-input[data-id="123"]');
-                    console.log("Input Element:", inputElement);
-             // Access the value of the lightning-input field
-                    //console.log("Input Value:", inputElement.value);
+             // Accessing the input field value
+           var inputValue = cmp.inputValue;
+          console.log("Input value from Lightning component: " + inputValue);
+
+          // Set a new value for the input field
+          cmp.inputValue = "New Value";
+          cmp.handleInputChange({ target: { value: "New Value" } });
         },
       );
     },
