@@ -26,10 +26,10 @@
           inputElement.variant ='base';
 
           const lwcElement = cmp.shadowRoot;
-          const inputElement = lwcElement.querySelector('lightning-input');
-          if(inputElement) {
-            console.log(inputElement);
-            inputElement.value ='Test1234';
+          const inputElement1 = lwcElement.querySelector('lightning-input');
+          if(inputElement1) {
+            console.log('Test123 : '+inputElement1);
+            inputElement1.value ='Test1234';
           }
         },
       );
