@@ -14,7 +14,13 @@
         targetElement, // the DOM location to insert the component
         function (cmp) {
           // callback when component is created and active on the page
-           //document.getElementByName("input-36").value ="456";
+
+
+            // Access the lightning-input element via component API
+            var inputElement = cmp.querySelector('lightning-input[data-id="123"]');
+                    console.log("Input Element:", inputElement);
+             // Access the value of the lightning-input field
+                    console.log("Input Value:", inputElement.value);
         },
       );
     },
@@ -22,3 +28,5 @@
   );
 </script>
 </HTML>
+
+
