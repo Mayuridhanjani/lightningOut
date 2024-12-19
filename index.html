@@ -24,6 +24,13 @@
           var inputElement = cmp.getInputElement()
           console.log('Input Element: ',inputElement);
           inputElement.variant ='base';
+
+          const lwcElement = cmp.shadowRoot;
+          const inputElement = lwcElement.querySelector('lightning-input');
+          if(inputElement) {
+            console.log(inputElement);
+            inputElement.value ='Test1234';
+          }
         },
       );
     },
