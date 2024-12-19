@@ -15,16 +15,16 @@
         function (cmp) {
           // callback when component is created and active on the page
           // Access the lightning-input element via component API
-                    var inputElement = cmp.querySelector('lightning-input[data-id="inputField"]');
-                    console.log("Input Element:", inputElement);
+          var inputElement = cmp.querySelector('lightning-input[data-id="testbtn"]');
+           console.log("Input Element:", inputElement);
 
              // Accessing the input field value
            var inputValue = cmp.inputValue;
           console.log("Input value from Lightning component1: " + inputValue);
 
           // Set a new value for the input field
-          cmp.inputValue = "New Value";
-          cmp.handleInputChange({ target: { value: "New Value" } });
+          /*cmp.inputValue = "New Value";
+          cmp.handleInputChange({ target: { value: "New Value" } });*/
         },
       );
     },
