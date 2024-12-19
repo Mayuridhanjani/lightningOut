@@ -14,8 +14,10 @@
         targetElement, // the DOM location to insert the component
         function (cmp) {
           // callback when component is created and active on the page
+          // Access the lightning-input element via component API
+                    var inputElement = cmp.querySelector('lightning-input[data-id="inputField"]');
+                    console.log("Input Element:", inputElement);
 
-      console.log("cmp " + cmp);
              // Accessing the input field value
            var inputValue = cmp.inputValue;
           console.log("Input value from Lightning component1: " + inputValue);
