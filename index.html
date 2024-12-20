@@ -63,6 +63,7 @@
        flowComponent.flowInputs.City1 = newInputValue;
       //flowComponent.refresh(); // Refresh the Flow component to reflect changes
       flowComponent.startFlow("New_Lead_POC", flowComponent.flowInputs);   
+             console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
           }
 
   }
