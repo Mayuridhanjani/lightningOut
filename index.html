@@ -25,8 +25,14 @@
           console.log('Input Element: ',inputElement);
           inputElement.variant ='Neutral';
 
-         const inputFieldValue = 'New Value for Input Field';
-          cmp.setFlowInput('City', inputFieldValue); 
+         /*const inputFieldValue = 'New Value for Input Field';
+          cmp.setFlowInput('City', inputFieldValue); */
+
+        // Get the Flow component by its aura:id
+         var flowComponent = cmp.find("New_Lead_POC");
+        // Get the current value of an input field after flow has started
+       var currentValue = flowComponent.get("v.City");
+      console.log("Current Flow Input Variable Value:", currentValue);
         },
       );
     },
