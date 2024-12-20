@@ -42,6 +42,9 @@
 
             var cityElement = component.shadowRoot.querySelector('lightning-flow');
             console.log('cityElement - '+cityElement);
+
+            const inputFieldValue = 'New Value for Input Field';
+            component.setFlowInput('City', inputFieldValue); 
           }
 
   }
