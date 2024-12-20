@@ -25,17 +25,23 @@
           console.log('Input Element: ',inputElement);
           inputElement.variant ='base';
 
-          const lwcElement = cmp.shadowRoot;
-          const inputElement1 = lwcElement.querySelector('lightning-input');
-          if(inputElement1) {
-            console.log('Test123 : '+inputElement1);
-            inputElement1.value ='Test1234';
-          }
+         
         },
       );
     },
     "https://vmb--vmdirecdev.sandbox.my.site.com/LightningOutPOC", // Site endpoint
   );
+
+  function getInputValue() {
+     const inputElement1 = cmp.shadowRoot.querySelector('lightning-input');
+          //const inputElement1 = lwcElement.querySelector('lightning-input');
+          if(inputElement1) {
+            console.log('Test123 : '+inputElement1.value);
+            //inputElement1.value ='Test1234';
+          }
+
+  }
+  setTimeout(getInputValue,3000);
 </script>
 </HTML>
 
