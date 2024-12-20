@@ -30,9 +30,12 @@
 
         // Get the Flow component by its aura:id
          var flowComponent = cmp.find("New_Lead_POC");
-        // Get the current value of an input field after flow has started
-       var currentValue = flowComponent.get("v.City");
-      console.log("Current Flow Input Variable Value:", currentValue);
+         // Example: Access Flow input elements directly (by setting new input values)
+        const newInputValue = "Updated Value from External HTML";
+
+        // Use JavaScript to update the Flow input element directly
+       flowComponent.flowInputs.City = newInputValue;
+       flowComponent.refresh(); // Refresh the Flow component to reflect changes
         },
       );
     },
