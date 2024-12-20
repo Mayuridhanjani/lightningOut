@@ -34,7 +34,7 @@
 
   function getInputValue() {
     const component = document.querySelector('c-create-Lead');
-     const inputElement1 = cmp.shadowRoot.querySelector('lightning-input');
+     const inputElement1 = component.shadowRoot.querySelector('lightning-input');
           //const inputElement1 = lwcElement.querySelector('lightning-input');
           if(inputElement1) {
             console.log('Test123 : '+inputElement1.value);
