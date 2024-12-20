@@ -25,7 +25,8 @@
           console.log('Input Element: ',inputElement);
           inputElement.variant ='Neutral';
 
-         
+         const inputFieldValue = 'New Value for Input Field';
+          cmp.setFlowInput('City', inputFieldValue); 
         },
       );
     },
@@ -43,8 +44,7 @@
             var cityElement = component.shadowRoot.querySelector('lightning-flow');
             console.log('cityElement - '+cityElement);
 
-            const inputFieldValue = 'New Value for Input Field';
-            component.setFlowInput('City', inputFieldValue); 
+            
           }
 
   }
