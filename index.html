@@ -11,7 +11,7 @@
       // Callback once framework and app loaded
       $Lightning.createComponent(
         "c:createLead", // top-level component of your app
-        {"JSONData": jsonData.first_name}, // attributes to set on the component when created
+        {"JSONInput": jsonData.first_name}, // attributes to set on the component when created
         targetElement, // the DOM location to insert the component
         function (cmp) {
           // callback when component is created and active on the page
