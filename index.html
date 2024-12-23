@@ -24,14 +24,14 @@
           var inputElement = cmp.getInputElement()
           console.log('Input Element: ',inputElement);
           //inputElement.variant ='Neutral';
-          var jsonData = '{
+          var jsonData = JSON.stringify({
   "id": 1,
   "first_name": "Jeanette",
   "last_name": "Penddreth",
   "email": "jpenddreth0@census.gov",
   "gender": "Female",
   "ip_address": "26.58.193.2"
-}';
+});
           inputElement.value = jsonData;
          /*const inputFieldValue = 'New Value for Input Field';
           cmp.setFlowInput('City', inputFieldValue); */
