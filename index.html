@@ -23,7 +23,22 @@
 
           var inputElement = cmp.getInputElement()
           console.log('Input Element: ',inputElement);
-          inputElement.variant ='Neutral';
+          //inputElement.variant ='Neutral';
+          inputElement.value ='{
+  "id": 1,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "email": "jpenddreth0@census.gov",
+  "gender": "Female",
+  "ip_address": "26.58.193.2"
+}, {
+  "id": 2,
+  "first_name": "Giavani",
+  "last_name": "Frediani",
+  "email": "gfrediani1@senate.gov",
+  "gender": "Male",
+  "ip_address": "229.179.4.212"
+}';
 
          /*const inputFieldValue = 'New Value for Input Field';
           cmp.setFlowInput('City', inputFieldValue); */
@@ -61,11 +76,11 @@
         const newInputValue = "Updated Value from External HTML";
 
         // Use JavaScript to update the Flow input element directly
-       flowComponent.flowInputs.City1 = newInputValue;
+      /* flowComponent.flowInputs.City1 = newInputValue;
               console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
       //flowComponent.refresh(); // Refresh the Flow component to reflect changes
       flowComponent.startFlow("New_Lead_POC", flowComponent.flowInputs);   
-             console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
+             console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));*/
           }
 
   }
