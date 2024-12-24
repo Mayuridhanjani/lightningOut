@@ -58,20 +58,20 @@
 
   function getInputValue() {
     const component = document.querySelector('c-create-Lead');
-      const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
+    const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
           
-             console.log('Button Element -> '+lwcButtonElement);
-    if(lwcButtonElement) {
-            console.log('Test123 : '+lwcButtonElement.variant);
-           lwcButtonElement.variant ='base';
-             console.log('Button Class : '+lwcButtonElement.class);
+   console.log('Button Element -> '+lwcButtonElement);
+  if(lwcButtonElement) {
+      console.log('Test123 : '+lwcButtonElement.variant);
+      lwcButtonElement.variant ='base';
+      console.log('Button Class : '+lwcButtonElement.class);
       //lwcButtonElement.class = 'slds-align_absolute-center';
       lwcButtonElement.classList.remove('slds-m-top_small');
      lwcButtonElement.classList.add('slds-align_absolute-center');
     }
-     const inputElement1 = component.shadowRoot.querySelector('lightning-input');
-          //const inputElement1 = lwcElement.querySelector('lightning-input');
-          if(inputElement1) {
+     const inputElement1 = component.shadowRoot.querySelector('123');
+     //const inputElement1 = lwcElement.querySelector('lightning-input');
+    if(inputElement1) {
             console.log('Test123 : '+inputElement1.value);
             inputElement1.value ='Test1234';
 
@@ -81,15 +81,6 @@
          var flowComponent = document.querySelector('c-create-Lead');
          // Example: Access Flow input elements directly (by setting new input values)
         console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
-        const newInputValue = "Updated Value from External HTML";
-
-        // Use JavaScript to update the Flow input element directly
-      /* flowComponent.flowInputs.City1 = newInputValue;
-              console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
-      //flowComponent.refresh(); // Refresh the Flow component to reflect changes
-      flowComponent.startFlow("New_Lead_POC", flowComponent.flowInputs);   
-             console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));*/
-
           
           }
 
