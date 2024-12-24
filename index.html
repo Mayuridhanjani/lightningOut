@@ -60,6 +60,10 @@
       const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
           
              console.log('Button Element -> '+lwcButtonElement);
+    if(lwcButtonElement) {
+            console.log('Test123 : '+lwcButtonElement.variant);
+           // inputElement1.value ='Test1234';
+    }
      const inputElement1 = component.shadowRoot.querySelector('lightning-input');
           //const inputElement1 = lwcElement.querySelector('lightning-input');
           if(inputElement1) {
