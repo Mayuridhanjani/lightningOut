@@ -57,7 +57,7 @@
 
   function getInputValue() {
     const component = document.querySelector('c-create-Lead');
-      const lwcButtonElement = component.querySelector('lightning-button');
+      const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
           
              console.log('Button Element -> '+lwcButtonElement);
      const inputElement1 = component.shadowRoot.querySelector('lightning-input');
