@@ -17,6 +17,11 @@
         function (cmp) {
           // callback when component is created and active on the page
           // Access the lightning-input element via component API
+
+          const lwcButtonElement = cmp.querySelector('lightning-button');
+          if(lwcButtonElement) {
+             console.log('Button Element -> '+lwcButtonElement);
+          }
            //var inputElement = cmp.querySelector("testbtn");
           /*var inputElement = cmp.querySelector('lightning-button[data-id="testbtn"]');
            console.log("Input Element:", inputElement);*/
