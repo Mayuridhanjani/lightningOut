@@ -25,7 +25,11 @@
 
           var inputElement = cmp.getInputElement()
           console.log('Input Element: ',inputElement);
-          //inputElement.variant ='Neutral';
+
+          var btnElement = cmp.getButtonElement();
+          console.log('Btutton Element: ',btnElement);
+          btnElement.variant ='Neutral';
+          btnElement.class='slds-m-top_large';
        
           //inputElement.value = JSON.stringify(jsonData);
          /*const inputFieldValue = 'New Value for Input Field';
