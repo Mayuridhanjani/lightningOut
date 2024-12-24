@@ -18,9 +18,7 @@
           // callback when component is created and active on the page
           // Access the lightning-input element via component API
 
-          const lwcButtonElement = cmp.querySelector('lightning-button');
           
-             console.log('Button Element -> '+lwcButtonElement);
 
            //var inputElement = cmp.querySelector("testbtn");
           /*var inputElement = cmp.querySelector('lightning-button[data-id="testbtn"]');
@@ -79,6 +77,10 @@
       //flowComponent.refresh(); // Refresh the Flow component to reflect changes
       flowComponent.startFlow("New_Lead_POC", flowComponent.flowInputs);   
              console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));*/
+
+            const lwcButtonElement = component.querySelector('lightning-button');
+          
+             console.log('Button Element -> '+lwcButtonElement);
           }
 
   }
