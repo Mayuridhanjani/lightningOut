@@ -57,6 +57,9 @@
 
   function getInputValue() {
     const component = document.querySelector('c-create-Lead');
+      const lwcButtonElement = component.querySelector('lightning-button');
+          
+             console.log('Button Element -> '+lwcButtonElement);
      const inputElement1 = component.shadowRoot.querySelector('lightning-input');
           //const inputElement1 = lwcElement.querySelector('lightning-input');
           if(inputElement1) {
@@ -78,9 +81,7 @@
       flowComponent.startFlow("New_Lead_POC", flowComponent.flowInputs);   
              console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));*/
 
-            const lwcButtonElement = component.querySelector('lightning-button');
           
-             console.log('Button Element -> '+lwcButtonElement);
           }
 
   }
