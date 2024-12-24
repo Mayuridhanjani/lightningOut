@@ -74,15 +74,11 @@
     if(inputElement1) {
             console.log('Test123 : '+inputElement1.value);
             inputElement1.value ='Test1234';
-
-            /*var cityElement = component.shadowRoot.querySelector('lightning-flow');
-            console.log('cityElement - '+cityElement);*/
-         // Get the Flow component by its aura:id
+    }
          var flowComponent = document.querySelector('c-create-Lead');
          // Example: Access Flow input elements directly (by setting new input values)
         console.log('flowcmp - '+JSON.stringify(flowComponent.flowInputs));
           
-          }
 
   }
   setTimeout(getInputValue,10000);
