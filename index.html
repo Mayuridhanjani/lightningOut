@@ -50,9 +50,9 @@
        
        flowComponent.refresh(); // Refresh the Flow component to reflect changes*/
           console.log('lwc comp - '+cmp.find("createLead"));
-          //const componentbtn = cmp.shadowRoot;
-          //const lwcButtonElement = componentbtn.querySelector('lightning-button');
-          //console.log('lwc comp -> '+lwcButtonElement);
+          const component11 = document.querySelector('c-create-Lead');
+          const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
+          console.log('lwc comp11 -> '+lwcButtonElement11);
           
    console.log('Button Element -> '+lwcButtonElement);
         },
