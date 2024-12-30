@@ -53,8 +53,7 @@
           const component11 = document.querySelector('c-create-Lead');
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
-            lwcButtonElement11.classList.remove('slds-m-top_small');
-            lwcButtonElement11.classList.add('new-class');
+            lwcButtonElement11.class = 'new-class' ;
            
            console.log('Test123 : '+lwcButtonElement11.class);
             
@@ -67,7 +66,12 @@
     },
     "https://vmb--vmdirecdev.sandbox.my.site.com/LightningOutPOC", // Site endpoint
   );
-
+  <style>
+    .new-class{
+      align: left;
+    }
+    </style>
+  
   function getInputValue() {
     const component = document.querySelector('c-create-Lead');
     const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
@@ -96,13 +100,9 @@
   }
   setTimeout(getInputValue,10000);
 </script>
-<body>
-  <style>
-    .new-class{
-      background-color: red;
-    }
-    </style>
-</body>
+
+
+
 </HTML>
 
 
