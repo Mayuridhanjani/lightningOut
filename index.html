@@ -53,6 +53,9 @@
           const component11 = document.querySelector('c-create-Lead');
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
+            lwcButtonElement11.classList.remove('slds-m-top_small');
+            lwcButtonElement11.classList.add('new-class');
+           
            console.log('Test123 : '+lwcButtonElement11.variant);
             
     }
@@ -70,14 +73,14 @@
     const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
           
    console.log('Button Element -> '+lwcButtonElement);
-  if(lwcButtonElement) {
+  /*if(lwcButtonElement) {
       console.log('Test123 : '+lwcButtonElement.variant);
       lwcButtonElement.variant ='base';
       console.log('Button Class : '+lwcButtonElement.class);
       //lwcButtonElement.class = 'slds-align_absolute-center';
       lwcButtonElement.classList.remove('slds-m-top_small');
      lwcButtonElement.classList.add('slds-align_absolute-center');
-    }
+    }*/
      const inputElement1 = component.shadowRoot.querySelector('lightning-input');
      //console.log('Test123 : '+inputElement1);
      //const inputElement1 = lwcElement.querySelector('lightning-input');
@@ -93,6 +96,11 @@
   }
   setTimeout(getInputValue,10000);
 </script>
+  <style>
+    .new-class{
+      background-color: red;
+    }
+    </style>
 </HTML>
 
 
