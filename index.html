@@ -71,9 +71,10 @@
           const component11 = document.querySelector('c-create-Lead');
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
-            lwcButtonElement11.classList.add("custom-button");
+           // lwcButtonElement11.classList.add("custom-button");
+              lwcButtonElement11.style.backgroundColor = '#ff4500';
            
-           console.log('Test123 : '+lwcButtonElement11.style);
+           console.log('Test123 : '+lwcButtonElement11.style.backgroundColor);
             
     }
           console.log('lwc comp11 -> '+lwcButtonElement11);
