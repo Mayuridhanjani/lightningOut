@@ -72,9 +72,10 @@
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
            // lwcButtonElement11.classList.add("custom-button");
-              lwcButtonElement11.style.float = 'right';
+               console.log('class Before : '+lwcButtonElement11.class);
+              lwcButtonElement11.class = 'custom-button';
            
-           console.log('Test123 : '+lwcButtonElement11.style.borderRadius);
+           console.log('Class After : '+lwcButtonElement11.class);
             
     }
           console.log('lwc comp11 -> '+lwcButtonElement11);
