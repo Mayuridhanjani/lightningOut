@@ -84,7 +84,12 @@
             lwcButtonElement11.style.float ='right';
            
            console.log('Class After : '+lwcButtonElement11.style.borderRadius);
-            
+
+          const lwcInputElement11 = component11.shadowRoot.querySelector('lightning-input');
+          if(lwcInputElement11) {
+                 lwcButtonElement11.label = 'Give Last Name';
+          }
+         console.log('input label -> '+lwcButtonElement11.label);   
     }
           console.log('lwc comp11 -> '+lwcButtonElement11);
           
