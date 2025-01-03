@@ -47,6 +47,12 @@
         text-align: left
       }
 
+      .cityInputEle {
+         background-color: 'lightgreen';
+         border-color: 'blue';
+         border-radius:'10px'
+
+      }
       
     </style>
 
@@ -120,7 +126,7 @@
     }
           const thirdInput = component11.shadowRoot.querySelector('[data-id="cityInput"]');
           console.log('thirdInput -> '+thirdInput);
-          thirdInput.classList.add("custom-button");
+          thirdInput.classList.add("cityInputEle");
             // If the input exists, apply styles using JavaScript.
             if (thirdInput) {
               //thirdInput.style.backgroundColor = 'lightgreen';
