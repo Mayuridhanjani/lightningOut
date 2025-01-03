@@ -9,7 +9,7 @@
         .custom-button {
             background-color: #28a745; /* Custom Green */
             color: white;
-            border-radius: 35px;
+            border-radius: 15px;
             padding: 12px 24px;
             font-size: 14px;
             cursor: pointer;
@@ -139,9 +139,9 @@
      lwcButtonElement.classList.add('slds-align_absolute-center');
     }*/
      const inputElement1 = component.shadowRoot.querySelector('lightning-input');
-     //const inputElement2 = component.shadowRoot.querySelector('inputEle1');
+     const inputElement2 = component.shadowRoot.querySelector('inputEle1');
     
-     //console.log('inputEle2 : '+inputElement2);
+     console.log('inputEle2 : '+inputElement2);
      //const inputElement1 = lwcElement.querySelector('lightning-input');
     if(inputElement1) {
             console.log('Test123 : '+inputElement1.value);
