@@ -64,7 +64,6 @@
 <script>
   var jsonData = JSON.stringify({ "first_name": "Jeanette"});
   const targetElement = document.querySelector("[data-lightning-out]");
-  //alert('Welcome');
   $Lightning.use(
     "c:LtgOutApplication", // name of the Lightning Out app
     function () {
@@ -77,11 +76,6 @@
           // callback when component is created and active on the page
           // Access the lightning-input element via component API
 
-          
-
-           //var inputElement = cmp.querySelector("testbtn");
-          /*var inputElement = cmp.querySelector('lightning-button[data-id="testbtn"]');
-           console.log("Input Element:", inputElement);*/
           var inputValue = cmp.getInputValue();
          console.log('The input value is: '+inputValue );
 
@@ -94,34 +88,22 @@
           //btnElement.label='Submit Lead';
          //btnElement.class='slds-m-top_small slds-p-bottom_large';
          // cmp.changeButtonClass('slds-p-bottom_large slds-p-top_large');
-       
-          //inputElement.value = JSON.stringify(jsonData);
-         /*const inputFieldValue = 'New Value for Input Field';
-          cmp.setFlowInput('City', inputFieldValue); */
 
-        // Get the Flow component by its aura:id
-         /*var flowComponent = cmp.find("createLead");
-         // Example: Access Flow input elements directly (by setting new input values)
-        const newInputValue = "Updated Value from External HTML";
-       
-        // Use JavaScript to update the Flow input element directly
-       flowComponent.flowInputs.City = newInputValue;
-       
-       flowComponent.refresh(); // Refresh the Flow component to reflect changes*/
+
           console.log('lwc comp - '+cmp.find("createLead"));
           const component11 = document.querySelector('c-create-Lead');
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
            // lwcButtonElement11.classList.add("custom-button");
-               console.log('class Before : '+lwcButtonElement11.class);
+            console.log('class Before : '+lwcButtonElement11.class);
             lwcButtonElement11.classList.add("custom-button");
             lwcButtonElement11.style.borderRadius = '5px';
             lwcButtonElement11.style.float ='right';
            
            console.log('Class After : '+lwcButtonElement11.style.borderRadius);
 
-          //const lwcInputElement11 = component11.shadowRoot.querySelector('cityInput');
-            //console.log('lwcInputElement11 -> '+lwcInputElement11);
+          const lwcButtonElement = component11.shadowRoot.querySelector('[data-id="testBtn"]');
+          console.log('lwcInputElement11 -> '+lwcButtonElement);
           /*if(lwcInputElement11) {
                  lwcInputElement11.label = 'Give Last Name';
           }
