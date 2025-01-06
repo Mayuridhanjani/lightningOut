@@ -113,10 +113,12 @@
           const thirdInput = component11.shadowRoot.querySelector('[data-id="cityInput"]');
           console.log('thirdInput -> '+thirdInput);
           thirdInput.label ='City Name';
+          console.log('Border Color '+ thirdInput.style.borderColor);
           thirdInput.classList.add("cityInputEle");
             // If the input exists, apply styles using JavaScript.
             if (thirdInput) {
               //thirdInput.style.backgroundColor = 'lightgreen';
+               console.log('Border Color after '+ thirdInput.style.borderColor);
               thirdInput.style.borderColor = 'green';
               //thirdInput.style.borderRadius = '25px';
         
