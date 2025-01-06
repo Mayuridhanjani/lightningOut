@@ -127,35 +127,7 @@
     "https://vmb--vmdirecdev.sandbox.my.site.com/LightningOutPOC", // Site endpoint
   );
   
-  function getInputValue() {
-    const component = document.querySelector('c-create-Lead');
-    const lwcButtonElement = component.shadowRoot.querySelector('lightning-button');
-          
-   console.log('Button Element -> '+lwcButtonElement);
-  /*if(lwcButtonElement) {
-      console.log('Test123 : '+lwcButtonElement.variant);
-      lwcButtonElement.variant ='base';
-      console.log('Button Class : '+lwcButtonElement.class);
-      //lwcButtonElement.class = 'slds-align_absolute-center';
-      lwcButtonElement.classList.remove('slds-m-top_small');
-     lwcButtonElement.classList.add('slds-align_absolute-center');
-    }*/
-     const inputElement1 = component.shadowRoot.querySelector('lightning-input');
-     const inputElement2 = component.shadowRoot.querySelector('inputEle1');
-    
-     console.log('inputEle2 : '+inputElement2);
-     //const inputElement1 = lwcElement.querySelector('lightning-input');
-    if(inputElement1) {
-            console.log('Test123 : '+inputElement1.value);
-            inputElement1.label ='Last Name';
-      
-    }
-
-          
-
-  }
-  setTimeout(getInputValue,10000);
-  
+ 
 </script>
   
 </HTML>
