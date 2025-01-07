@@ -100,10 +100,11 @@
           thirdInput.label ='City Name';
           thirdInput.classList.add("cityInputEle");
           component11.addEventListener('submitcomplete', function(event) {
-            // const redirectUrl = event.detail.redirectUrl;
-            /*if(redirectUrl) {
+            const redirectUrl = event.detail.redirectUrl;
+            console.log('redirectUrl -> '+redirectUrl);
+            if(redirectUrl) {
               window.location.href = redirectUrl;
-            }*/
+            }
           });
           
 
