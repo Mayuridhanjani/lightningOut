@@ -79,6 +79,8 @@
 
           console.log('lwc comp - '+cmp.find("createLead"));
           const component11 = document.querySelector('c-create-Lead');
+
+          //Access lightning button element
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
            // lwcButtonElement11.classList.add("custom-button");
@@ -91,24 +93,12 @@
 
           const lwcButtonElement = component11.shadowRoot.querySelector('[data-id="testBtn"]');
           console.log('lwcInputElement11 -> '+lwcButtonElement.label);
-          /*if(lwcInputElement11) {
-                 lwcInputElement11.label = 'Give Last Name';
-          }
-         console.log('input label -> '+lwcButtonElement11.label);   */
-    }
+         }
+          //Access lightning input element
           const thirdInput = component11.shadowRoot.querySelector('[data-id="cityInput"]');
           console.log('thirdInput -> '+thirdInput);
           thirdInput.label ='City Name';
-          console.log('Border Color '+ thirdInput.style.borderColor);
           thirdInput.classList.add("cityInputEle");
-            // If the input exists, apply styles using JavaScript.
-            if (thirdInput) {
-              //thirdInput.style.backgroundColor = 'lightgreen';
-               console.log('Border Color after '+ thirdInput.style.borderColor);
-              thirdInput.style.borderColor = 'green';
-              //thirdInput.style.borderRadius = '25px';
-        
-            }
 
         },
       );
@@ -116,9 +106,7 @@
     "https://vmb--vmdirecdev.sandbox.my.site.com/LightningOutPOC", // Site endpoint
   );
   
- 
-</script>
-  
+</script>  
 </HTML>
 
 
