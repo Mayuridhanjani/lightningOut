@@ -104,7 +104,9 @@
             console.log('isLeadCreated -> '+isLeadCreated);
             if(isLeadCreated =='Success') {
               //window.location.href = redirectUrl;
-              cmp.closeForm = true;
+              console.log('Close Form : '+cmp.closeForm);
+              cmp.closeForm = false;
+              
               window.open("https://www.w3schools.com/");
             }
           });
