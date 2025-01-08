@@ -62,39 +62,20 @@
         function (cmp) {
           // callback when component is created and active on the page
           // Access the lightning-input element via component API
-
-          var inputValue = cmp.getInputValue();
-         console.log('The input value is: '+inputValue );
-
-          var inputElement = cmp.getInputElement();
-          console.log('Input Element: ',inputElement);
-
-          var btnElement = cmp.getButtonElement();
-          console.log('Btutton Element: ',btnElement);
-          //btnElement.variant ='Neutral';
-          //btnElement.label='Submit Lead';
-         //btnElement.class='slds-m-top_small slds-p-bottom_large';
-         // cmp.changeButtonClass('slds-p-bottom_large slds-p-top_large');
-
-
-          console.log('lwc comp - '+cmp.find("createLead"));
+          
           const component11 = document.querySelector('c-create-Lead');
 
-          //Access lightning button element
+          //Access lightning button element and apply Custom CSS
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
-           // lwcButtonElement11.classList.add("custom-button");
-            console.log('class Before : '+lwcButtonElement11.class);
             lwcButtonElement11.classList.add("custom-button");
             lwcButtonElement11.style.borderRadius = '5px';
             lwcButtonElement11.style.float ='right';
-           
-           console.log('Class After : '+lwcButtonElement11.style.borderRadius);
 
           const lwcButtonElement = component11.shadowRoot.querySelector('[data-id="testBtn"]');
           console.log('lwcInputElement11 -> '+lwcButtonElement.label);
          }
-          //Access lightning input element
+          //Access lightning input element and apply custom CSS
           const thirdInput = component11.shadowRoot.querySelector('[data-id="cityInput"]');
           console.log('thirdInput -> '+thirdInput);
           thirdInput.label ='City Name';
@@ -103,21 +84,16 @@
             const isLeadCreated = event.detail.message;
             console.log('isLeadCreated -> '+isLeadCreated);
             if(isLeadCreated =='Success') {
-              //window.location.href = redirectUrl;
-              console.log('Close Form : '+component11.closeForm);
               component11.closeForm = false;
-              
+            //window.location.href = redirectUrl;
               window.open("https://www.w3schools.com/");
             }
           });
-          
-
         },
       );
     },
     "https://vmb--vmdirecdev.sandbox.my.site.com/LightningOutPOC", // Site endpoint
-  );
-  
+  );  
 </script>  
 </HTML>
 
