@@ -100,12 +100,12 @@
           thirdInput.label ='City Name';
           thirdInput.classList.add("cityInputEle");
           component11.addEventListener('submitcomplete', function(event) {
-            //const isLeadCreated = event.detail.message;
-            //console.log('isLeadCreated -> '+isLeadCreated);
-            //if(isLeadCreated =='Success') {
+            const isLeadCreated = event.detail.message;
+            console.log('isLeadCreated -> '+isLeadCreated);
+            if(isLeadCreated =='Success') {
               //window.location.href = redirectUrl;
               window.open("https://www.w3schools.com/");
-            //}
+            }
           });
           
 
