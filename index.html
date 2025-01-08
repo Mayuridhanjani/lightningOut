@@ -100,9 +100,9 @@
           thirdInput.label ='City Name';
           thirdInput.classList.add("cityInputEle");
           component11.addEventListener('submitcomplete', function(event) {
-            const redirectUrl = event.detail.redirectUrl;
-            console.log('redirectUrl -> '+redirectUrl);
-            if(redirectUrl) {
+            const isLeadCreated = event.detail.message;
+            console.log('isLeadCreated' -> '+isLeadCreated);
+            if(isLeadCreated =='Success') {
               //window.location.href = redirectUrl;
               window.open("https://www.w3schools.com/");
             }
