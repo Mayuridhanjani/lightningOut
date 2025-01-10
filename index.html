@@ -5,7 +5,7 @@
   <head>
     <style>
         /* External CSS for the embedded button */
-        .custom-button {
+       /* .custom-button {
             background-color: lightBlue; 
             color: white;
             border-radius: 15px;
@@ -27,10 +27,10 @@
         color: #333 !important;
       }
 
-      .inputEle1 {
+      .inputEle1 {*/
      
         /*font-size: 30px !important;*/
-        border-radius: 7px !important;
+       /* border-radius: 7px !important;
         text-align: left;
         font-weight: bold
       }
@@ -42,7 +42,7 @@
         --slds-c-input-color-background: lightBlue;
         --slds-c-input-radius-border: 3rem
 
-      }
+      }*/
       
     </style>
 
@@ -69,8 +69,8 @@
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
             lwcButtonElement11.classList.add("custom-button");
-            lwcButtonElement11.style.borderRadius = '5px';
-            lwcButtonElement11.style.float ='right';
+            //lwcButtonElement11.style.borderRadius = '5px';
+            //lwcButtonElement11.style.float ='right';
 
           const lwcButtonElement = component11.shadowRoot.querySelector('[data-id="testBtn"]');
           console.log('lwcInputElement11 -> '+lwcButtonElement.label);
