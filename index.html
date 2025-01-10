@@ -5,8 +5,8 @@
   <head>
     <style>
         /* External CSS for the embedded button */
-        /*.custom-button {
-            background-color: #28a745; 
+        .custom-button {
+            background-color: lightBlue; 
             color: white;
             border-radius: 15px;
             padding: 2px 2px;
@@ -25,24 +25,24 @@
         font-size: 18px !important;
         border-radius: 8px !important;
         color: #333 !important;
-      }*/
+      }
 
-      //.inputEle1 {
+      .inputEle1 {
      
         /*font-size: 30px !important;*/
         /*border-radius: 7px !important;
         text-align: left;
         font-weight: bold
-      }*/
+      }
 
-      /*.cityInputEle {
+      .cityInputEle {
         border-radius: 25px !important;
         font-weight: bold;
         text-align: center;
         --slds-c-input-color-background: orange;
         --slds-c-input-radius-border: 3rem
 
-      }*/
+      }
       
     </style>
 
@@ -69,8 +69,8 @@
           const lwcButtonElement11 = component11.shadowRoot.querySelector('lightning-button');
           if(lwcButtonElement11) {
             lwcButtonElement11.classList.add("custom-button");
-            //lwcButtonElement11.style.borderRadius = '5px';
-            //lwcButtonElement11.style.float ='right';
+            lwcButtonElement11.style.borderRadius = '5px';
+            lwcButtonElement11.style.float ='right';
 
           const lwcButtonElement = component11.shadowRoot.querySelector('[data-id="testBtn"]');
           console.log('lwcInputElement11 -> '+lwcButtonElement.label);
